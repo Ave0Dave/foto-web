@@ -5,7 +5,7 @@
 }
 
 .category {
-    font-size: 5rem;
+    font-size: clamp(3rem, 5vw, 5rem);
     -webkit-text-stroke: 1.5px var(--color-text);
     text-stroke: 1.5px var(--color-text);
     -webkit-text-fill-color: transparent;
@@ -19,6 +19,7 @@
     width: 14rem;
     height: 1rem;
     background-color: var(--color-text);
+    padding-left: 0.5rem;
 }
 
 main {
@@ -94,6 +95,10 @@ h2 {
     grid-template-columns: repeat(2, minmax(400px, 0.5fr));
 }
 
+.about p {
+    font-size: 15px;
+}
+
 .masonry .mItem {
     display: inline-block;
     margin-bottom: 16px;
@@ -125,7 +130,7 @@ img:hover {
     }
 
     .grid-2 {
-        grid-template-columns: repeat(1, minmax(400px, 0.5fr));
+        grid-template-columns: repeat(1, minmax(350px, 0.7fr));
     }
 }
 
@@ -138,5 +143,9 @@ img:hover {
 @media (max-width: 650px) {
     .line {
         background-color: transparent;
+    }
+
+    .grid-2 {
+        grid-template-columns: repeat(1, minmax(350px, 1fr));
     }
 }

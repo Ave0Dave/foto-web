@@ -12,8 +12,8 @@ body {
 	margin: 0;
 	--color-text: #050505;
 	--color-bg: #fff2e2;
-	--color-link: #866b4a;
-	--color-link-hover: #050505;
+	--color-link: #050505;
+	--color-link-hover: #d30b0b;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
@@ -34,7 +34,7 @@ a {
 }
 
 .home:hover {
-	color: var(--color-link);
+	color: var(--color-link-hover);
 }
 
 a:hover,
