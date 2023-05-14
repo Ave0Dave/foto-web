@@ -119,9 +119,13 @@ img:hover {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 900px) {
     .masonry {
         column-count: 2;
+    }
+
+    .grid-2 {
+        grid-template-columns: repeat(1, minmax(400px, 0.5fr));
     }
 }
 
