@@ -252,4 +252,8 @@ a:focus {
 	.visible {
 		opacity: 0;
 	}
+
+	.menu__item-link::before {
+		left: -0.5rem;
+	}
 }
