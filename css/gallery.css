@@ -1,0 +1,138 @@
+.category-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category {
+    font-size: 5rem;
+    -webkit-text-stroke: 1.5px var(--color-text);
+    text-stroke: 1.5px var(--color-text);
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: transparent;
+    transition: opacity 0.4s;
+    position: relative;
+}
+
+.line {
+    width: 14rem;
+    height: 1rem;
+    background-color: var(--color-text);
+}
+
+main {
+    padding: 2.5rem 5vw 1rem 5vw;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.frame {
+    padding: 0;
+}
+
+.bottom {
+    padding-top: 5rem;
+}
+
+.masonry {
+    column-count: 2;
+    column-gap: 16px;
+    padding-bottom: 2rem;
+}
+
+.masonry-3 {
+    column-count: 3;
+}
+
+.masonry-3 .mItem {
+    width: 100%;
+}
+
+.about {
+    border: 2px solid var(--color-text);
+    padding: 2rem;
+}
+
+.arrow {
+    transform: rotate(180deg);
+    height: 0.9rem;
+    width: 0.9rem;
+}
+
+.fill {
+    -webkit-text-stroke: unset;
+    text-stroke: unset;
+    -webkit-text-fill-color: var(--color-text);
+    text-fill-color: var(--color-text);
+}
+
+.outline {
+    -webkit-text-stroke: 1.5px var(--color-text);
+    text-stroke: 1.5px var(--color-text);
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.about p {
+    text-align: justify;
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 16px;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, minmax(400px, 0.5fr));
+}
+
+.masonry .mItem {
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    transition: ease 0.3s;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+.noZoom:hover {
+    transform: none;
+}
+
+@media (max-width: 1199px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 991px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .masonry {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 650px) {
+    .line {
+        background-color: transparent;
+    }
+}
