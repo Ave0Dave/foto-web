@@ -245,4 +245,11 @@ a:focus {
 	.frame a {
 		pointer-events: auto;
 	}
+
+}
+
+@media (max-width: 1000px) {
+	.visible {
+		opacity: 0;
+	}
 }
